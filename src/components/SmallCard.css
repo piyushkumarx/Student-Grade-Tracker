@@ -1,0 +1,64 @@
+.small-card{
+font-family: "Karla", sans-serif;
+    border: 1px solid rgba(73, 67, 67, 0.322);
+    border-radius: 10px;
+    padding: 20px 20px;
+    width: 8.5rem;
+    background-color: white;
+}
+
+
+.head-small-card{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+
+
+.head-small-card h3{
+    font-size: 15px;
+}
+
+.small-card p{
+    margin-top: 6px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+.grey{
+    color: #a1abb8;
+}
+
+.green{
+    color: #16a249;
+
+}
+
+.red{
+    color: #ef4343;
+}
+
+.blue{
+    color: #3c83f5;
+}
+
+.common-color{
+    color: rgb(117, 115, 115);
+}
+
+@media(max-width:620px){
+    .small-card-components{
+        width: 90vw;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .small-card{
+        width: 42vw;
+    }
+}

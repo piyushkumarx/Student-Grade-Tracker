@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+
+body{
+    background-color: #f9fafb;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: ; */
+    padding: 0px 20px;
+   
+}
+
+@media(max-width:950px){
+    body{  
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+    }
+
+@media(max-width:620px){
+
+}

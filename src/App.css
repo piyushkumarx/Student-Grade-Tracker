@@ -1,0 +1,115 @@
+.main-content{
+    display: flex;
+    
+    /* align-items: center; */
+    gap: 25px;
+   margin-top:  20vh;
+
+}
+
+
+.small-card-components{
+    display: flex;
+    gap: 12px;
+}
+
+.filter-bar{
+    margin: 22px 0;
+    display:flex;
+    gap: 8px;
+}
+
+.filter-btn{
+    border: none;
+    font-weight: 500;
+    background-color: #e1e7ef;
+    cursor: pointer;
+    padding: 10px 14px;
+    color: black;
+    font-size: 0.9rem;
+    border-radius: 12px;
+}
+
+
+.grade-card{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+    height: 23rem;
+    
+    /* max-height: 24rem;  */
+    /* overflow-y: auto; */
+    overflow-y: scroll;
+   
+    
+}
+
+.filter-btn-active{
+    border: none;
+    font-weight: 500;
+    background-color: #3b82f5;
+    cursor: pointer;
+    padding: 10px 14px;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 12px;
+}
+
+
+.no-student{
+    border: 1px solid rgba(0, 0, 0, 0.114);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: white;
+
+
+}
+
+.no-student h4{
+    
+    font-size: 16px;
+    font-weight: 600;
+    color: #6a798f;
+}
+
+.no-student p{
+        color: #6a798f;
+
+    font-weight: 500;
+}
+
+.no-student-icon{
+    font-size: 40px;
+    color: #6c7178a8;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:950px){
+    .main-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width:620px){
+    .grade-card{
+        overflow-y: auto;
+        height: unset;
+    }
+}
+

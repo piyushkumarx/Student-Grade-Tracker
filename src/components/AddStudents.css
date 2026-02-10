@@ -1,0 +1,83 @@
+
+.add-new-student{
+    background-color: #ffffff;
+    border: 1px solid rgb(217, 216, 216);
+    width: 20rem;
+   max-height: max-content;
+    padding: 20px 20px ;
+    border-radius: 12px;
+}
+
+.add-button{
+    cursor: pointer;
+}
+
+.add-heading{
+    gap: 8px;
+    margin-bottom: 18px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.add-heading h2{
+    font-family: "Karla", sans-serif;
+}
+
+label{
+   font-family: "Nunito", sans-serif;
+   font-weight: 600;
+}
+
+
+.student-input{
+    /* border: 1px solid black; */
+    display:flex;
+    flex-direction: column;
+}
+
+.input-student{
+    margin-bottom: 16px;
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+padding-left: 10px;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(160, 155, 155, 0.386);
+}
+
+.input-student:focus{
+    outline: none;
+    border: 2px solid #3c83f6;
+}
+
+.student-input input{
+    margin-top: 8px;
+}
+
+.add-button{
+    border-radius: 10px;
+    width: 100%;
+    padding: 12px 0px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #3c83f6;
+    color: white;
+}
+
+@media(max-width:950px){
+    .add-new-student{
+        width: auto;
+    }
+}
+
+
+@media(max-width:620px){
+    .add-new-student{
+        width: 100%;
+    }
+
+    .add-heading h2{
+        font-size: 1.2rem;
+    }
+}
