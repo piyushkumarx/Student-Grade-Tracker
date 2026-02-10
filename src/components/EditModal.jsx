@@ -9,8 +9,7 @@ export default function EditStudent() {
     editStudent,
     students,
     setStudents,
-    setIsEditOpen,
-  } = useContext(StudentContext);
+    setIsEditOpen, }= useContext(StudentContext);
 
 
   const [name, setName] = useState(editStudent.stdtName);
@@ -21,9 +20,7 @@ export default function EditStudent() {
 
     const updatedList = students.map((student) =>
       student.id === editStudent.id
-        ? { ...student, stdtName: name, grade: Number(grade) }
-        : student
-    );
+        ? { ...student, stdtName: name, grade: Number(grade) }: student);
 
     setStudents(updatedList);
     setIsEditOpen(false); 
@@ -43,7 +40,8 @@ export default function EditStudent() {
             type="text"
             className="input-student"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => setName(e.target.value.trim())}
+            required
           />
         </div>
 

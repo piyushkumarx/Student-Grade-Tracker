@@ -12,7 +12,6 @@ export default function AddStudent() {
 
   function newStudentAdd(e) {
     e.preventDefault()
-
     const newStudent = {
       id: studentIdGen(),
       stdtName: studentName,
@@ -25,6 +24,7 @@ export default function AddStudent() {
     setStudentGrade("");
   }
 
+  
   return (
     <form className="add-new-student" onSubmit={newStudentAdd}>
       <div className="add-heading">
@@ -40,7 +40,7 @@ export default function AddStudent() {
           className="input-student"
           placeholder="Enter student name"
           value={studentName}
-          onChange={(e) => setStudentName(e.target.value)}
+          onChange={(e) => setStudentName(e.target.value.trim())}
           required
         />
       </div>
